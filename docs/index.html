@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Revcontent Android SDK</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<link href="ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="index.html" tabindex="1">
+                    Revcontent Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.2.1        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":revcontent-sdk/release">release</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":revcontent-sdk/release"
+                                       data-filter=":revcontent-sdk/release"/>
+                                <span class="checkbox--icon"></span>
+                                release
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Revcontent Android SDK
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content" pageIds="Revcontent Android SDK::////PointingToDeclaration//357686389">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Revcontent</span></span> <span><span>Android</span></span> <span><span>SDK</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":revcontent-sdk/release"><p class="paragraph">A Compose-first Android SDK for embedding Revcontent recommendation widgets in publisher apps. It wraps the underlying widget WebView, handles scroll-based viewability tracking, and provides an &quot;Explore More&quot; bottom-sheet flow that can intercept back navigation on article screens.</p><blockquote class="quotation"><p class="paragraph"><strong>Status:</strong> pre-1.0, distributed via GitHub Packages from a private repo. Coordinates: <code class="lang-kotlin">com.revcontent:revcontent-sdk:&lt;version&gt;</code>.</p></blockquote><h2 class="">Where to start</h2><div class="table--container"><table><thead><tr><th>You want to…</th><th>Use</th></tr></thead><tbody><tr><td>Set publisher-wide defaults once at app start</td><td><a href="-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent/index.html">com.revcontent.sdk.Revcontent</a>.configure</td></tr><tr><td>Drop a widget into a Compose screen</td><td><a href="-revcontent -android -s-d-k/com.revcontent.sdk.compose/-revcontent-widget.html">com.revcontent.sdk.compose.RevcontentWidget</a></td></tr><tr><td>Wrap an article screen with back-interception + Explore More</td><td><a href="-revcontent -android -s-d-k/com.revcontent.sdk.compose/-revcontent-article-scaffold.html">com.revcontent.sdk.compose.RevcontentArticleScaffold</a></td></tr><tr><td>Embed a widget without Compose (View system)</td><td><a href="-revcontent -android -s-d-k/com.revcontent.sdk.views/-revcontent-web-view/index.html">com.revcontent.sdk.views.RevcontentWebView</a> + <a href="-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent-article-helper/index.html">com.revcontent.sdk.RevcontentArticleHelper</a></td></tr><tr><td>Tune how often Explore More shows</td><td><a href="-revcontent -android -s-d-k/com.revcontent.sdk.models/-explore-more-config/index.html">com.revcontent.sdk.models.ExploreMoreConfig</a> / <a href="-revcontent -android -s-d-k/com.revcontent.sdk.models/-frequency-capping/index.html">com.revcontent.sdk.models.FrequencyCapping</a></td></tr><tr><td>Route SDK logs into your own logger</td><td><a href="-revcontent -android -s-d-k/com.revcontent.sdk.logging/-revcontent-logger/index.html">com.revcontent.sdk.logging.RevcontentLogger</a> / <a href="-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent/index.html">com.revcontent.sdk.Revcontent</a>.setLogger</td></tr></tbody></table></div><h2 class="">One-time setup</h2><p class="paragraph">Call <code class="lang-kotlin">Revcontent.configure(...)</code> once from your <code class="lang-kotlin">Application.onCreate()</code> to set the publisher defaults used by the rest of the SDK:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">class MyApplication : Application() {<br>    override fun onCreate() {<br>        super.onCreate()<br>        Revcontent.configure(<br>            publisherId = &quot;84088&quot;,<br>            siteUrl = &quot;https://app.revcontent.com&quot;<br>        )<br>    }<br>}</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><p class="paragraph">Every call site can still override <code class="lang-kotlin">publisherId</code>/<code class="lang-kotlin">siteUrl</code> if you embed widgets from more than one publisher.</p><h2 class="">Embedding a widget (Compose)</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">@Composable<br>fun HomeScreen() {<br>    val scrollState = rememberScrollState()<br>    Column(Modifier.fillMaxSize().verticalScroll(scrollState)) {<br>        // ...your content...<br>        RevcontentWidget(<br>            widgetId = &quot;286827&quot;,<br>            scrollState = scrollState,            // enables viewability reporting<br>            modifier = Modifier.fillMaxWidth(),<br>            onLoaded = { /* initial render complete */ },<br>            onLinkClicked = { url -&gt; /* recommendation tapped */ },<br>            onError = { message -&gt; /* load failed */ }<br>        )<br>    }<br>}</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><h2 class="">Article screens (Explore More)</h2><p class="paragraph"><code class="lang-kotlin">RevcontentArticleScaffold</code> registers back-press interception while it's in composition. With an <code class="lang-kotlin">exploreMore</code> config attached, pressing back shows the Explore More bottom sheet first; otherwise it falls straight through to <code class="lang-kotlin">onNavigateBack</code>.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">RevcontentArticleScaffold(<br>    onNavigateBack = onNavigateBack,<br>    articleUrl = articleUrl,<br>    exploreMore = ExploreMoreConfig(<br>        widgetId = &quot;286827&quot;,<br>        title = &quot;Keep on reading&quot;,<br>        frequencyCapping = FrequencyCapping.OncePerArticle<br>    )<br>) { /* article body */ }</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><p class="paragraph">See <a href="-revcontent -android -s-d-k/com.revcontent.sdk.models/-frequency-capping/index.html">com.revcontent.sdk.models.FrequencyCapping</a> for the full set of capping strategies (<code class="lang-kotlin">EveryTime</code>, <code class="lang-kotlin">OncePerSession</code>, <code class="lang-kotlin">OncePerArticle</code>, and duration-based <code class="lang-kotlin">every(...)</code>).</p><h2 class="">Full integration guide</h2><p class="paragraph">For installation (GitHub Packages auth), the View-system path, and release publishing, see the <a href="https://github.com/revcontent-production/revcontent-android-sdk#readme">README</a>.</p></div></div>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="-286985999%2FPackages%2F357686389" anchor-label="com.revcontent.sdk" id="-286985999%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":revcontent-sdk/release" data-filterable-set=":revcontent-sdk/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-revcontent -android -s-d-k/com.revcontent.sdk/index.html">com.revcontent.sdk</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-286985999%2FPackages%2F357686389"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">release</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-286985999%2FPackages%2F357686389" anchor-label="com.revcontent.sdk" id="-286985999%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+            <p class="paragraph">Top-level SDK entry points. <a href="-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent/index.html">Revcontent</a> holds global configuration and logging setup; <a href="-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent-article-helper/index.html">RevcontentArticleHelper</a> wires back-interception and scroll tracking into a classic <code class="lang-kotlin">Activity</code>-based article screen.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1800171157%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.compose" id="1800171157%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":revcontent-sdk/release" data-filterable-set=":revcontent-sdk/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-revcontent -android -s-d-k/com.revcontent.sdk.compose/index.html">com.revcontent.sdk.compose</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1800171157%2FPackages%2F357686389"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">release</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="1800171157%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.compose" id="1800171157%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+            <p class="paragraph">Jetpack Compose surface of the SDK — <code class="lang-kotlin">@Composable</code> entry points for embedding widgets (<a href="-revcontent -android -s-d-k/com.revcontent.sdk.compose/-revcontent-widget.html">RevcontentWidget</a>) and wrapping article screens (<a href="-revcontent -android -s-d-k/com.revcontent.sdk.compose/-revcontent-article-scaffold.html">RevcontentArticleScaffold</a>).</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="453571106%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.logging" id="453571106%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":revcontent-sdk/release" data-filterable-set=":revcontent-sdk/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-revcontent -android -s-d-k/com.revcontent.sdk.logging/index.html">com.revcontent.sdk.logging</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="453571106%2FPackages%2F357686389"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">release</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="453571106%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.logging" id="453571106%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+            <p class="paragraph">Pluggable logging. Provide a <a href="-revcontent -android -s-d-k/com.revcontent.sdk.logging/-revcontent-logger/index.html">RevcontentLogger</a> to route SDK diagnostics into your own logging pipeline, or use the built-in <a href="-revcontent -android -s-d-k/com.revcontent.sdk.logging/-logcat-logger/index.html">LogcatLogger</a>.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-206928885%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.models" id="-206928885%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":revcontent-sdk/release" data-filterable-set=":revcontent-sdk/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-revcontent -android -s-d-k/com.revcontent.sdk.models/index.html">com.revcontent.sdk.models</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-206928885%2FPackages%2F357686389"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">release</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-206928885%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.models" id="-206928885%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+            <p class="paragraph">Configuration value types: <a href="-revcontent -android -s-d-k/com.revcontent.sdk.models/-s-d-k-config/index.html">SDKConfig</a>, <a href="-revcontent -android -s-d-k/com.revcontent.sdk.models/-explore-more-config/index.html">ExploreMoreConfig</a>, and the <a href="-revcontent -android -s-d-k/com.revcontent.sdk.models/-frequency-capping/index.html">FrequencyCapping</a> strategy hierarchy.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="707038527%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.services" id="707038527%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":revcontent-sdk/release" data-filterable-set=":revcontent-sdk/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-revcontent -android -s-d-k/com.revcontent.sdk.services/index.html">com.revcontent.sdk.services</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="707038527%2FPackages%2F357686389"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">release</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="707038527%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.services" id="707038527%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+            <p class="paragraph">Internal-facing services that back the public API: config fetching/caching, scroll tracking, and Explore More frequency bookkeeping.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1381715791%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.views" id="-1381715791%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":revcontent-sdk/release" data-filterable-set=":revcontent-sdk/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-revcontent -android -s-d-k/com.revcontent.sdk.views/index.html">com.revcontent.sdk.views</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1381715791%2FPackages%2F357686389"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">release</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1381715791%2FPackages%2F357686389" anchor-label="com.revcontent.sdk.views" id="-1381715791%2FPackages%2F357686389" data-filterable-set=":revcontent-sdk/release"></a>
+            <p class="paragraph">View-system building blocks for apps that aren't using Compose: <a href="-revcontent -android -s-d-k/com.revcontent.sdk.views/-revcontent-web-view/index.html">RevcontentWebView</a> (the widget host) and <a href="-revcontent -android -s-d-k/com.revcontent.sdk.views/-explore-more-sheet/index.html">ExploreMoreSheet</a> (the bottom sheet).</p>
+          </span></div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

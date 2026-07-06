@@ -1,0 +1,181 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.revcontent",
+    "module": "revcontent-sdk",
+    "version": "0.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.4.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "9.2.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "revcontent-sdk-0.2.1.aar",
+          "url": "revcontent-sdk-0.2.1.aar",
+          "size": 150854,
+          "sha512": "1dfec4e378d58c9f1535bcf2aacf57ddfe1119ff478029ecf24c33206c436f5a3a2a61b00373a6a109e268ae38989730174e62bb189013e0891a7af05b065cab",
+          "sha256": "097bf6826281158e4d9b6378ed6e8ebc6a2a811d2356c3d5329bd1e5d13de1bf",
+          "sha1": "b8534963459684c0ef26a67e43ded6a8214a3e67",
+          "md5": "f0ac765a3fb6a0eb846f689ec99dab73"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.webkit",
+          "module": "webkit",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.browser",
+          "module": "browser",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-ktx",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.02.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "9.2.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "revcontent-sdk-0.2.1.aar",
+          "url": "revcontent-sdk-0.2.1.aar",
+          "size": 150854,
+          "sha512": "1dfec4e378d58c9f1535bcf2aacf57ddfe1119ff478029ecf24c33206c436f5a3a2a61b00373a6a109e268ae38989730174e62bb189013e0891a7af05b065cab",
+          "sha256": "097bf6826281158e4d9b6378ed6e8ebc6a2a811d2356c3d5329bd1e5d13de1bf",
+          "sha1": "b8534963459684c0ef26a67e43ded6a8214a3e67",
+          "md5": "f0ac765a3fb6a0eb846f689ec99dab73"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "revcontent-sdk-0.2.1-sources.jar",
+          "url": "revcontent-sdk-0.2.1-sources.jar",
+          "size": 27441,
+          "sha512": "a77c71e404e90dbb1a7cd2ef8b91456be1d8debd2f1e6a03ca02b3616b386197a19c695cd06df4eb554c3860d860b660df158a1e7d4bfabc5933f27c964800ae",
+          "sha256": "3b38a472a11b099453f7cf75c3f40bc3a3e0a630c4ba94879e6f22744b240a89",
+          "sha1": "88a5315dc6b2c02b746e9e479229cff1d1d4e672",
+          "md5": "455c8c0aed7b533e446dd0009c6b1428"
+        }
+      ]
+    }
+  ]
+}
