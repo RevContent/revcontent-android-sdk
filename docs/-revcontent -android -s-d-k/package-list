@@ -90,6 +90,8 @@ $dokka.location:com.revcontent.sdk/RevcontentArticleHelper.Companion///PointingT
 $dokka.location:com.revcontent.sdk/RevcontentArticleHelper///PointingToDeclaration/-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent-article-helper/index.html
 $dokka.location:com.revcontent.sdk/RevcontentArticleHelper/RevcontentArticleHelper/#androidx.activity.ComponentActivity#kotlin.String?#com.revcontent.sdk.views.RevcontentWebView?#androidx.core.widget.NestedScrollView?#kotlin.Long#com.revcontent.sdk.models.ExploreMoreConfig?#kotlin.String#kotlin.String#kotlin.Function0[kotlin.Unit]?/PointingToDeclaration/-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent-article-helper/-revcontent-article-helper.html
 $dokka.location:com.revcontent.sdk/RevcontentArticleHelper/attach/#/PointingToDeclaration/-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent-article-helper/attach.html
+$dokka.location:com.revcontent.sdk/RevcontentExploreMore///PointingToDeclaration/-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent-explore-more/index.html
+$dokka.location:com.revcontent.sdk/RevcontentExploreMore/presentIfNeeded/#androidx.activity.ComponentActivity#com.revcontent.sdk.models.ExploreMoreConfig#kotlin.String?#kotlin.Boolean#kotlin.String?#kotlin.String?#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-revcontent -android -s-d-k/com.revcontent.sdk/-revcontent-explore-more/present-if-needed.html
 com.revcontent.sdk
 com.revcontent.sdk.compose
 com.revcontent.sdk.logging
